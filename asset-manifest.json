@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/katy-holder/goit-react-hw-01-components/static/css/main.7acaea2f.css",
-    "main.js": "/katy-holder/goit-react-hw-01-components/static/js/main.9da85a57.js",
+    "main.js": "/katy-holder/goit-react-hw-01-components/static/js/main.e60b1530.js",
     "index.html": "/katy-holder/goit-react-hw-01-components/index.html",
     "main.7acaea2f.css.map": "/katy-holder/goit-react-hw-01-components/static/css/main.7acaea2f.css.map",
-    "main.9da85a57.js.map": "/katy-holder/goit-react-hw-01-components/static/js/main.9da85a57.js.map"
+    "main.e60b1530.js.map": "/katy-holder/goit-react-hw-01-components/static/js/main.e60b1530.js.map"
   },
   "entrypoints": [
     "static/css/main.7acaea2f.css",
-    "static/js/main.9da85a57.js"
+    "static/js/main.e60b1530.js"
   ]
 }
