@@ -14,5 +14,5 @@ export const Status = () => {
       <span className="label">Likes</span>
       <span className="quantity">{ user.stats.likes}</span>
     </li>
-</ul>
+  </ul>
 }
