@@ -1,9 +1,14 @@
-import { Transactions } from "./Transactions";
+import { Transactions } from "./Transactions.jsx";
 import transactionsData from "./transactions.json";
+import { TransactionTableUI, TransactionRow } from "ui/Transactions";
+
+// const TransactionTableUI = styled.table`
+//     border-collapse: collapse;
+// `;
 
 export const TransactionHistory = () => {
-    return (
-        <table class="transaction-history">
+  return (
+        <TransactionTableUI class="transaction-history">
   <thead>
     <tr>
       <th>Type</th>
@@ -13,6 +18,6 @@ export const TransactionHistory = () => {
   </thead>
 
             <Transactions transactions={transactionsData} />
-</table>
+</TransactionTableUI>
     )
 }

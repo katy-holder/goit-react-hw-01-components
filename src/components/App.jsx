@@ -6,7 +6,7 @@ import { TransactionHistory } from "./Transactions/TransactionHistory";
 
 import user from "./Profile/user.json";
 import data from "./Statistics/data.json";
-import friends from "./FriendList/friends.json";
+import friends from "../mock/friends.json";
 
 export const App = () => {
   return <div>
