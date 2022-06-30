@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
-export const TransactionRow = styled.tr`
+
+export const TableRow = styled.tr`
     width: 200px;
+    display: column;
 `;

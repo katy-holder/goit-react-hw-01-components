@@ -25,16 +25,19 @@ const ListItem = styled.li`
   border: 1px solid black;
   border-radius: 4px;
   margin: 5px;
+  box-shadow: 18px -13px 47px -18px rgba(66, 68, 90, 1);
 `;
 
 const ListEl = styled.span`
   padding: 10px;
-`
+`;
 
 export const Statistics = () => {
-    return <Statistic className="statistics">
+  return (
+    <Statistic className="statistics">
   <Title className="title">Upload stats</Title>
     <ListLink className="stat-list">{data.map(el => <ListItem className="item" key={el.id}><ListEl className="label">{el.label}</ListEl><span className="percentage">{el.percentage}%</span></ListItem>)}
   </ListLink>
-</Statistic>
+    </Statistic>
+  )
 }

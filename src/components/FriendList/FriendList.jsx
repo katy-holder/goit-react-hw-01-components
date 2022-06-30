@@ -1,9 +1,17 @@
 import PropTypes from "prop-types";
+import styled from "styled-components";
 import { FriendListItem } from "./FriendsListItem";
 
+const FriedsItem = styled.ul`
+    list-style: none;
+    margin: 20px 0;
+    padding: 0;
+    display: column;
+`;
+
 export const FriendList = ({friends}) => {
-    return (
-        <ul className="friend-list">{friends.map(el => {
+    return ( 
+        <FriedsItem className="friend-list">{friends.map(el => {
             return (
                 <FriendListItem
                     key={el.key}
@@ -13,7 +21,7 @@ export const FriendList = ({friends}) => {
                 </FriendListItem>
             )
         })}
-    </ul>
+    </FriedsItem>
     )
 };
 
