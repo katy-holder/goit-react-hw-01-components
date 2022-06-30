@@ -1,23 +1,18 @@
 import { Transactions } from "./Transactions.jsx";
-import transactionsData from "./transactions.json";
+import transactions from "../../mock/transactions.json";
 import { TransactionTableUI, TransactionRow } from "ui/Transactions";
-
-// const TransactionTableUI = styled.table`
-//     border-collapse: collapse;
-// `;
 
 export const TransactionHistory = () => {
   return (
-        <TransactionTableUI class="transaction-history">
+        <TransactionTableUI className="transaction-history">
   <thead>
-    <tr>
+    <TransactionRow>
       <th>Type</th>
       <th>Amount</th>
       <th>Currency</th>
-    </tr>
+    </TransactionRow>
   </thead>
-
-            <Transactions transactions={transactionsData} />
+        <Transactions transactions={transactions} />
 </TransactionTableUI>
     )
 }

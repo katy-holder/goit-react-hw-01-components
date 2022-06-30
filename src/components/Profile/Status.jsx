@@ -1,4 +1,4 @@
-import user from "./user.json";
+import user from "../../mock/user.json";
 
 export const Status = () => {
     return <ul className="stats">
