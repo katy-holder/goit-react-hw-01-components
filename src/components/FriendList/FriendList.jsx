@@ -6,7 +6,6 @@ const FriedsItem = styled.ul`
     list-style: none;
     margin: 20px 0;
     padding: 0;
-    display: column;
 `;
 
 export const FriendList = ({friends}) => {

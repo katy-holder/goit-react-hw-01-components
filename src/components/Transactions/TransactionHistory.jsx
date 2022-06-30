@@ -7,12 +7,19 @@ export const TransactionTableUI = styled.table`
     border-collapse: collapse;
     display: column;
     align-items: center;
+    box-shadow: 18px -13px 47px -18px rgba(66, 68, 90, 1);
 `;
 
 const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+`;
+
+const TableHeader =styled.th`
+  border: 1px solid black;
+  height: 30px;
+  background-color: #8d8dc2;
 `
 
 
@@ -22,9 +29,9 @@ export const TransactionHistory = () => {
         <TransactionTableUI className="transaction-history">
   <thead>
     <TableRow>
-      <th>Type</th>
-      <th>Amount</th>
-      <th>Currency</th>
+      <TableHeader>Type</TableHeader>
+      <TableHeader>Amount</TableHeader>
+      <TableHeader>Currency</TableHeader>
     </TableRow>
   </thead>
         <Transactions transactions={transactions} />
