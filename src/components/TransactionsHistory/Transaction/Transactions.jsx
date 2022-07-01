@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { TableRow } from "./TableRow.styled.js"
 
 
 const TableText = styled.td`
@@ -10,8 +9,12 @@ const TableText = styled.td`
 
 export const TableBody = styled.tbody`
 tr:nth-child(even) {
-    background-color: #b7b7b7
+    background-color: ${p => p.theme.colors.bgColorTransaction}
     };
+`;
+
+const TableRow = styled.tr`
+    text-align: center;
 `;
 
 export const Transactions = ({ transactions }) => {

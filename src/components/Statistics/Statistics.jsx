@@ -36,7 +36,13 @@ export const Statistics = () => {
   return (
     <Statistic className="statistics">
   <Title className="title">Upload stats</Title>
-    <ListLink className="stat-list">{data.map(el => <ListItem className="item" key={el.id}><ListEl className="label">{el.label}</ListEl><span className="percentage">{el.percentage}%</span></ListItem>)}
+      <ListLink className="stat-list">
+        {data.map(el =>
+          <ListItem className="item"
+            key={el.id}><ListEl
+            className="label">{el.label}
+          </ListEl>
+          <span className="percentage">{el.percentage}%</span></ListItem>)}
   </ListLink>
     </Statistic>
   )

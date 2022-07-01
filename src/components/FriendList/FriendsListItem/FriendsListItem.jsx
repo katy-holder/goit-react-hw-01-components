@@ -1,4 +1,4 @@
-import { OnlineCheckbox } from "./OnlineCheckbox";
+import { OnlineStatus } from "../OnlineStatus/OnlineStatus";
 import styled from "styled-components";
 
 const Container = styled.div`
@@ -29,7 +29,7 @@ export const FriendListItem = ({ isOnline, avatar, name }) => {
     return (
         <Container>
     <FriedsList className="item">
-        <OnlineCheckbox className="status" style={{ backgroundColor: isOnline ? "green" : "red" }}></OnlineCheckbox>
+        <OnlineStatus className="status" isOnline={isOnline}></OnlineStatus>
         <ImgEl className="avatar" src={avatar} alt="Avatar" width="48" />
         <p className="name">{name}</p>
         </FriedsList>

@@ -1,4 +1,3 @@
-import user from "../../mock/user.json";
 import styled from "styled-components";
 
 const Container = styled.div`
@@ -20,14 +19,14 @@ const InfoText  = styled.p`
     text-align: center;
 `
 
-export const Description = () => {
+export const Description = ({avatar, username, tag, location}) => {
     return <Container className="description">
     <ImgEl
-        src={ user.avatar}
+        src={ avatar}
         alt="User avatar"
         className="avatar"/>
-    <InfoText className="name">{ user.username }</InfoText>
-    <InfoText className="tag">@{ user.tag}</InfoText>
-    <InfoText className="location">{ user.location}</InfoText>
+    <InfoText className="name">{ username }</InfoText>
+    <InfoText className="tag">@{ tag}</InfoText>
+    <InfoText className="location">{ location}</InfoText>
 </Container>
 }

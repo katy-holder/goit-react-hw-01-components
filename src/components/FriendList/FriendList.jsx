@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 import styled from "styled-components";
-import { FriendListItem } from "./FriendsListItem";
+import { FriendListItem } from "./FriendsListItem/FriendsListItem";
 
 const FriedsItem = styled.ul`
     list-style: none;

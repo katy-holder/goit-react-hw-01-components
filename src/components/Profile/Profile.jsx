@@ -1,5 +1,5 @@
-import { Status } from "./Status";
-import { Description } from "./Description";
+import { Status } from "./Status/Status";
+import { Description } from "./Description/Description";
 import styled from "styled-components";
 
 const Container = styled.div`
@@ -14,9 +14,13 @@ const Container = styled.div`
     box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
 `
 
-export const Profile = () => {
+export const Profile = ({username, avatar, tag, location, stats}) => {
     return <Container className="profile">
-        <Description />
-        <Status/>
+        <Description
+            username={username}
+            avatar={avatar}
+            tag={tag}
+            location={location} />
+        <Status stats={stats}/>
 </Container>
 }

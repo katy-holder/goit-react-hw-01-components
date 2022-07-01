@@ -1,7 +1,6 @@
-import { Transactions } from "./Transactions.jsx";
+import { Transactions } from "./Transaction/Transactions.jsx";
 import transactions from "../../mock/transactions.json";
 import styled from "styled-components";
-import { TableRow } from "./TableRow.styled.js"
 
 export const TransactionTableUI = styled.table`
     border-collapse: collapse;
@@ -16,11 +15,15 @@ const Container = styled.div`
   justify-content: center;
 `;
 
-const TableHeader =styled.th`
+const TableHeader = styled.th`
   border: 1px solid black;
   height: 30px;
-  background-color: #8d8dc2;
-`
+  background-color: ${p => p.theme.colors.bgColorTransactionHistory};
+`;
+
+const TableRow = styled.tr`
+    text-align: center;
+`;
 
 
 export const TransactionHistory = () => {
